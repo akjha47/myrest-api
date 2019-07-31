@@ -1,5 +1,4 @@
 import pandas as pd
-import json
 class TrieNode:
     def __init__(self):
         # Initialising one node for trie
@@ -71,8 +70,8 @@ class Trie:
                     word_suggestions_to_return.append(words[0])
             del in_between
             del list_of_words_having_key
-            return json.dumps(word_suggestions_to_return)
-        return json.dumps(word_suggestions_to_return)
+            return word_suggestions_to_return
+        return word_suggestions_to_return
 
 #print('Starting Server...')
 words_tree = Trie()
